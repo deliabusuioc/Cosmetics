@@ -7,6 +7,12 @@
     src: url(schrift/Comfortaa-VariableFont_wght.ttf);
 }
 
+*{
+    margin: 0;
+    font-family: Inter-2, sans-serif;
+    scroll-behavior: smooth;
+}
+
 section{
     background-repeat: no-repeat;
     background-size: cover;
@@ -52,15 +58,16 @@ section{
     background-repeat: no-repeat;
     background-size: contain;
     width: 849px;
-    height: 223px;
+    height: 250px;
     padding-left: 30px;
 }
 
 .main-title{
-    padding-top: 67px;
+    padding-top: 30px;
     color: #2B2D35;
-    font-size: 80px;
+    font-size: 65px;
     font-family: Inter-2;
+    margin-bottom: 10px;
 }
 
 .main-subtitle{
@@ -88,4 +95,233 @@ section{
     color: #000;
     font-family: 'Inter-2';
     
+}
+
+.moving-planet{
+    background: url(img/img/moving-planet.png);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 230px;
+    transform: rotate(-15deg);
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    animation-name: planet;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes planet {
+    from{transform: translateY(0);}
+    to{transform: translateY(70px);}
+}
+
+.title{
+    padding: 100px;
+    text-align: center;
+    color: #FFF;
+    font-size: 80px;
+    text-shadow: 5px 5px #000;
+    font-family: Inter-2;
+}
+
+.about-content{
+    width: 50%;
+    height: 320px;
+    padding-left: 40px;
+    padding-top: 40px;
+    background: #792AFF;
+    position: relative;
+    display: flex;
+}
+
+.about-title{
+    font-size: 20px;
+    max-width: 463px;
+    margin-bottom: 20px;
+    font-family: Comfortaa-1;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.about-card{
+    background-image: url(img/img/form2.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 346px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    position: relative;
+    left: 50px;
+}
+
+.about-card p{
+    color: #000;
+    font-size: 17px;
+    align-self: start;
+    padding-left: 20px;
+    line-height: 10px;
+    font-family: Comfortaa-1;
+    font-weight: 700;
+}
+
+.about-card img{
+    padding-bottom: 20px;
+    width: 200px;
+}
+
+.skills-card{
+    background-image: url(img/img/form3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin: 20px;
+    padding-left: 10px;
+}
+
+.skills-card p{
+    color: #000;
+    font-size: 18px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 500px;
+    font-family: Comfortaa-1;
+}
+
+.moving-planet2{
+    background: url(img/img/moving-planet2.png);
+    background-repeat: no-repeat;
+    width: 208px;
+    height: 200px;
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    animation-name: planet2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes planet2 {
+    from{transform: translateY(0);}
+    to{transform: translateY(70px);}
+}
+
+.works-block img{
+    margin: 0 20px;
+    width: 27%;
+    box-shadow: 7px 7px 0 #000000;
+}
+
+.comments-block{
+    justify-content: space-evenly;
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.comment-card{
+    background-image: url(img/img/card.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+    margin-bottom: 100px;
+}
+
+.comment-card h3{
+    font-size: 18px;
+    font-family: Comfortaa-1;
+    padding: 10px;
+}
+
+.comment-card p{
+    font-size: 14px;
+    font-family: Comfortaa-1;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.comment{
+    background-image: url(img/img/comment.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 327px;
+    height: 161px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comment p{
+    font-family: Comfortaa-1;
+    font-size: 20px;
+    max-width: 250px;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.fixed-menu{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    align-items: center;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    padding-right: 150px;
+}
+
+.nav-link{
+    width: 112px;
+    height: 40px;
+    border-radius: 12px;
+    border: 2px solid #000;
+    background-color: #FFF;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-family: 'Comfortaa';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    transition-duration: 0.3s;
+}
+
+.nav-link:hover{
+    background-color: #BBFF2C;
+}
+
+.logo{
+    color: #BBFF2C;
+    font-size: 80px;
+    padding-left: 50px;
+}
+
+.active{
+    background-color: #BBFF2C;
 }
