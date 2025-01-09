@@ -63,7 +63,7 @@ section{
 }
 
 .main-title{
-    padding-top: 30px;
+    padding-top: 68px;
     color: #2B2D35;
     font-size: 65px;
     font-family: Inter-2;
@@ -166,6 +166,7 @@ section{
     line-height: 10px;
     font-family: Comfortaa-1;
     font-weight: 700;
+    margin: 0px 0px 30px;
 }
 
 .about-card img{
@@ -304,7 +305,7 @@ nav{
     text-decoration: none;
     color: #000;
     font-size: 20px;
-    font-family: 'Comfortaa';
+    font-family: 'Comfortaa-1';
     display: flex;
     justify-content: center;
     align-items: center;
@@ -324,4 +325,14 @@ nav{
 
 .active{
     background-color: #BBFF2C;
+}
+
+.footer{
+    background-color: #131c3e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    font-size: 18px;
+    font-family: 'Comfortaaa-1';
 }
