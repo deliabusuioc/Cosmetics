@@ -2,18 +2,19 @@
     font-family: inter-2;
     src: url(cosmetics/Inter-VariableFont_opsz\,wght.ttf);
 }
+
 @font-face {
     font-family: comfortaa-1;
     src: url(schrift/Comfortaa-VariableFont_wght.ttf);
 }
 
-*{
+* {
     margin: 0;
     font-family: Inter-2, sans-serif;
     scroll-behavior: smooth;
 }
 
-section{
+section {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -21,39 +22,43 @@ section{
     position: relative;
 }
 
-#main{
+#main {
     background-image: url(img/img/bgMAIN.png);
 }
 
-#about{
+#about {
     background-image: url(img/img/bgABOUT.png);
 }
 
-#skills{
+#skills {
     background-image: url(img/img/bgSKILLS.png);
 }
 
-#works{
+#works {
     background-image: url(img/img/bgWORKS.png);
 }
 
-#comments{
+#comments {
     background-image: url(img/img/bgCOMMENTS.png);
 }
 
-.main-block, .about-block, .skills-block, .works-block, comments-block{
+.main-block,
+.about-block,
+.skills-block,
+.works-block,
+comments-block {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 70vh;
 }
 
-.main-block{
+.main-block {
     flex-direction: column;
     height: 100vh;
 }
 
-.main-content{
+.main-content {
     background-image: url(img/img/form1.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -62,7 +67,7 @@ section{
     padding-left: 30px;
 }
 
-.main-title{
+.main-title {
     padding-top: 68px;
     color: #2B2D35;
     font-size: 65px;
@@ -70,13 +75,13 @@ section{
     margin-bottom: 10px;
 }
 
-.main-subtitle{
+.main-subtitle {
     color: #2B2D35;
     font-size: 20px;
     font-family: 'Comfortaa-1';
 }
 
-.button{
+.button {
     width: 200px;
     height: 60px;
     border-radius: 100px;
@@ -89,15 +94,15 @@ section{
     margin-top: 20px;
 }
 
-.button a{
+.button a {
     font-size: 20px;
     text-decoration: none;
     color: #000;
     font-family: 'Inter-2';
-    
+
 }
 
-.moving-planet{
+.moving-planet {
     background: url(img/img/moving-planet.png);
     background-repeat: no-repeat;
     width: 200px;
@@ -113,11 +118,16 @@ section{
 }
 
 @keyframes planet {
-    from{transform: translateY(0);}
-    to{transform: translateY(70px);}
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(70px);
+    }
 }
 
-.title{
+.title {
     padding: 100px;
     text-align: center;
     color: #FFF;
@@ -126,7 +136,7 @@ section{
     font-family: Inter-2;
 }
 
-.about-content{
+.about-content {
     width: 50%;
     height: 320px;
     padding-left: 40px;
@@ -136,7 +146,7 @@ section{
     display: flex;
 }
 
-.about-title{
+.about-title {
     font-size: 20px;
     max-width: 463px;
     margin-bottom: 20px;
@@ -145,7 +155,7 @@ section{
     color: #FFF;
 }
 
-.about-card{
+.about-card {
     background-image: url(img/img/form2.png);
     background-repeat: no-repeat;
     width: 100%;
@@ -158,7 +168,7 @@ section{
     left: 50px;
 }
 
-.about-card p{
+.about-card p {
     color: #000;
     font-size: 17px;
     align-self: start;
@@ -169,12 +179,12 @@ section{
     margin: 0px 0px 30px;
 }
 
-.about-card img{
+.about-card img {
     padding-bottom: 20px;
     width: 200px;
 }
 
-.skills-card{
+.skills-card {
     background-image: url(img/img/form3.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -187,7 +197,7 @@ section{
     padding-left: 10px;
 }
 
-.skills-card p{
+.skills-card p {
     color: #000;
     font-size: 18px;
     margin-top: 80px;
@@ -197,7 +207,7 @@ section{
     font-family: Comfortaa-1;
 }
 
-.moving-planet2{
+.moving-planet2 {
     background: url(img/img/moving-planet2.png);
     background-repeat: no-repeat;
     width: 208px;
@@ -212,17 +222,22 @@ section{
 }
 
 @keyframes planet2 {
-    from{transform: translateY(0);}
-    to{transform: translateY(70px);}
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(70px);
+    }
 }
 
-.works-block img{
+.works-block img {
     margin: 0 20px;
     width: 27%;
     box-shadow: 7px 7px 0 #000000;
 }
 
-.comments-block{
+.comments-block {
     justify-content: space-evenly;
     max-width: 1150px;
     margin: auto;
@@ -230,7 +245,7 @@ section{
     flex-direction: row;
 }
 
-.comment-card{
+.comment-card {
     background-image: url(img/img/card.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -244,20 +259,20 @@ section{
     margin-bottom: 100px;
 }
 
-.comment-card h3{
+.comment-card h3 {
     font-size: 18px;
     font-family: Comfortaa-1;
     padding: 10px;
 }
 
-.comment-card p{
+.comment-card p {
     font-size: 14px;
     font-family: Comfortaa-1;
     padding: 10px 20px;
     text-align: center;
 }
 
-.comment{
+.comment {
     background-image: url(img/img/comment.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -269,34 +284,34 @@ section{
     align-items: center;
 }
 
-.comment p{
+.comment p {
     font-family: Comfortaa-1;
     font-size: 20px;
     max-width: 250px;
 }
 
-nav{
+nav {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 10;
 }
 
-.fixed-menu{
+.fixed-menu {
     display: flex;
     justify-content: space-between;
     flex: 1;
     align-items: center;
 }
 
-.nav-links{
+.nav-links {
     display: flex;
     justify-content: center;
     flex-grow: 1;
     padding-right: 150px;
 }
 
-.nav-link{
+.nav-link {
     width: 112px;
     height: 40px;
     border-radius: 12px;
@@ -313,21 +328,21 @@ nav{
     transition-duration: 0.3s;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     background-color: #BBFF2C;
 }
 
-.logo{
+.logo {
     color: #BBFF2C;
     font-size: 80px;
     padding-left: 50px;
 }
 
-.active{
+.active {
     background-color: #BBFF2C;
 }
 
-.footer{
+.footer {
     background-color: #131c3e;
     display: flex;
     justify-content: space-between;
@@ -335,4 +350,155 @@ nav{
     height: 60px;
     font-size: 18px;
     font-family: 'Comfortaaa-1';
+}
+
+.mobile-button {
+    display: none;
+    padding-top: 10px;
+    width: 40px;
+    position: absolute;
+    right: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.mobile-menu {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    background-color: #200153;
+    min-height: 100vh;
+}
+
+.mobile-nav {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-nav-links .nav-link {
+    margin-bottom: 30px;
+    width: 210px;
+    height: 50px;
+}
+
+@media (max-width: 1000px) {
+    .nav-links {
+        display: none;
+    }
+
+    .logo {
+        font-size: 40px;
+        padding-left: 20px;
+        padding-top: 10;
+    }
+
+    .main-content {
+        max-width: 320px;
+    }
+
+    .main-title {
+        padding-top: 30px;
+        font-size: 30px;
+    }
+
+    .main-subtitle {
+        font-size: 15px;
+    }
+
+    .planet,
+    .moving-cloud,
+    .moving-planet2 {
+        display: none;
+    }
+
+    .title {
+        font-size: 50px;
+        padding-top: 30px;
+    }
+
+    .about-block {
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .about-card {
+        order: -1;
+        background-size: contain;
+        padding-top: 20px;
+        width: 326px;
+        height: 296px;
+    }
+
+    .about-card img {
+        width: 85%;
+    }
+
+    .about-content {
+        width: 75%;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+
+    .about-title {
+        font-size: 18px;
+    }
+
+    .skills-card {
+        margin: 20px;
+        padding-left: 10px;
+        background-size: contain;
+    }
+
+    .skills-card p {
+        font-size: 16px;
+        margin-top: 15;
+        margin-bottom: 20px;
+    }
+
+    .skills-section {
+        min-height: 60vh;
+    }
+
+    .skills-card .button {
+        position: absolute;
+        bottom: 100px;
+    }
+
+    .works-block {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .works-block img {
+        margin: 20px 0;
+        width: 80%;
+    }
+
+    .comments-block {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+
+    .comment {
+        background-image: url(img/img/comment-mobile.png);
+    }
+
+    .comment p {
+        font-size: 15px;
+        max-width: 290px;
+    }
+
+    .mobile-button {
+        display: block;
+    }
 }
